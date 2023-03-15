@@ -1,11 +1,7 @@
-import { Request, Response } from 'express';
-
-class ImportCategoryController {
-  handle(request: Request, response: Response) {
-    const { file } = request;
+class ImportCategoryUseCase {
+  execute(file: any) {
     console.log(file);
-    return response.send();
   }
 }
 
-export { ImportCategoryController };
+export { ImportCategoryUseCase };
